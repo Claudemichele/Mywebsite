@@ -1,0 +1,66 @@
+
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome To My Webpage!</title>
+
+     </head>
+    {% block content %}
+
+<body>
+ <div style="background-color:lightblue">
+  <center><h2>Welcome to <em>My Website.</em></h2></center>
+ </div>
+</body>
+
+{% endblock content %}
+
+<body>
+    <div class="row">
+      <div class="col-sm-2">
+      {% block sidebar %}
+      <ul class="sidebar-nav">
+          <img src="{% static 'my_picture.jpg' %}" alt="My image" style="width:150px;height:150px;"/>
+          <li><a href="about">My background</a></li>
+          <li><a href="https://www.findingdutchland.com/six-fun-trivia-about-utrecht-happiest-places-in-the-world/">My world</a></li>
+          <li><a href="https://www.lamborghini.com/en-en/models">My ultimate dream</a></li>
+      </ul>
+     {% endblock %}
+      </div>
+    </div>
+</body>
+ <body>
+    <p>
+            <center>
+            <center><h4>Hi there!</h4></center>
+            <center>I am just a normal person you might think,</center>
+            <center>but when you get to know me better you will find out how intriguing and fascinating I am.</center>
+            <center>I am just one of a kind!</center>
+            <center>I like lots of stuffs like travelling but too broke to travel (lol).</center>
+            <center>Music, especially slow/slow-jam, heals me!!</center>
+            <p>Please check my professional background at<a href="https://www.linkedin.com/in/michelenkuimi/"> LinkedIn.</a></p>
+            <p><a href="/">Go back home</a>
+            </center>
+    </p>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
